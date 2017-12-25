@@ -1,0 +1,68 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/registerbac" >
+
+    <Button
+        android:id="@+id/backButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/registerPassword"
+        android:layout_alignParentBottom="true"
+        android:layout_alignRight="@+id/registerPassword"
+        android:layout_marginBottom="67dp"
+        android:background="@drawable/registerbutton_selector" />
+
+    <EditText
+        android:id="@+id/registerUsername"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/registerPasswordCheck"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="17dp"
+        android:ems="10"
+        android:hint="请输入账户"
+        android:textColorHint="#fff" />
+
+    <EditText
+        android:id="@+id/registerNickname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/registerUsername"
+        android:layout_alignLeft="@+id/registerUsername"
+        android:layout_marginBottom="14dp"
+        android:ems="10"
+        android:hint="请输入昵称"
+        android:textColorHint="#fff"/>
+
+    <EditText
+        android:id="@+id/registerPassword"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/backButton"
+        android:layout_alignLeft="@+id/registerPasswordCheck"
+        android:layout_alignRight="@+id/registerPasswordCheck"
+        android:layout_marginBottom="68dp"
+        android:ems="10"
+        android:hint="请再次输入密码"
+        android:inputType="textPassword"
+        android:textColorHint="#fff" />
+
+    <EditText
+        android:id="@+id/registerPasswordCheck"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/registerPassword"
+        android:layout_alignLeft="@+id/registerUsername"
+        android:layout_alignRight="@+id/registerUsername"
+        android:layout_marginBottom="14dp"
+        android:ems="10"
+        android:hint="请输入密码"
+        android:inputType="textPassword"
+        android:textColorHint="#fff" >
+
+        <requestFocus />
+    </EditText>
+
+</RelativeLayout>

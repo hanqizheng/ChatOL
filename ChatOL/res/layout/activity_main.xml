@@ -1,0 +1,69 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.hello.MainActivity"
+    tools:ignore="MergeRootFrame" >
+
+    
+     <FrameLayout
+        android:id="@+id/container"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_margin="5dp"
+        android:layout_weight="100" >
+
+    </FrameLayout>
+
+     <LinearLayout
+         android:id="@+id/menuBar"
+         android:layout_width="match_parent"
+         android:layout_height="0dp"
+         android:layout_margin="5dp"
+         android:layout_weight="20"
+         android:orientation="horizontal" >
+
+        <RadioGroup
+            android:id="@+id/radioGroup1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" 
+            android:orientation="horizontal" 
+            >
+
+            <RadioButton
+                android:id="@+id/chatBtn"
+                android:layout_width="76dp"
+                android:checked="true"
+                android:layout_height="wrap_content"
+                android:background="@drawable/wechatbutton_selector" 
+                android:button="@null"
+            />
+
+        	<RadioButton
+            	android:id="@+id/contactsBtn"
+            	android:layout_width="76dp"
+            	android:layout_height="wrap_content"
+     
+                android:background="@drawable/contactbutton_selector" 
+            	android:button="@null"
+			/>
+
+        	<RadioButton
+           	 	android:id="@+id/discoverBtn"
+            	android:layout_width="76dp"
+            	android:layout_height="wrap_content"
+                android:background="@drawable/discoverbutton_selector" 
+            	android:button="@null"
+ 			/>
+        	<RadioButton
+            	android:id="@+id/meBtn"
+            	android:layout_width="76dp"
+            	android:layout_height="wrap_content"
+                android:background="@drawable/mebutton_selector" 
+            	android:button="@null"
+ 			/>
+         </RadioGroup>
+     </LinearLayout>
+    
+</LinearLayout>

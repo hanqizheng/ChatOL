@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <ImageView
+        android:id="@+id/contactImage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:background="@drawable/icon" />
+
+    <Button
+        android:id="@+id/contactUserButton"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="70dp"
+        android:layout_height="40dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@+id/gridLayout1"
+        android:background="@drawable/chatbtn"
+        android:focusable="false" />
+
+    <GridLayout
+        android:id="@+id/gridLayout1"
+        android:layout_width="160dp"
+        android:layout_height="50dp"
+        android:layout_marginLeft="13dp"
+        android:layout_centerVertical="true"
+        android:layout_toRightOf="@+id/contactImage"
+        android:columnCount="1" >
+
+        <TextView
+            android:id="@+id/contactUserNameTextView"
+            android:layout_column="0"
+            android:layout_gravity="left|center_vertical"
+            android:layout_row="0"
+            android:text="Medium Text"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    </GridLayout>
+
+</RelativeLayout>

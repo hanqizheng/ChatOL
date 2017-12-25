@@ -1,0 +1,62 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/loginbac1" >
+
+    <EditText
+        android:id="@+id/Username"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="158dp"
+        android:ems="10"
+        android:hint="账户"
+        android:textColorHint="#fff"
+         android:textColor="#fff" />
+
+
+    <EditText
+        android:id="@+id/Password"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/Username"
+        android:layout_alignRight="@+id/Username"
+        android:layout_centerVertical="true"
+        android:ems="10"
+        android:hint="密码"
+        android:inputType="textPassword"
+        android:textColorHint="#fff" 
+        android:textColor="#fff"/>
+
+    <Button
+        android:id="@+id/loginButton"
+        android:layout_width="wrap_content"
+        android:layout_height="48dp"
+        android:layout_alignLeft="@+id/Password"
+        android:layout_alignRight="@+id/Username"
+        android:layout_below="@+id/Password"
+        android:layout_marginTop="31dp"
+        android:background="@drawable/loginbutton_selector" />
+
+    <Button
+        android:id="@+id/registerButton"
+        android:layout_width="wrap_content"
+        android:layout_height="48dp"
+        android:layout_alignLeft="@+id/loginButton"
+        android:layout_alignRight="@+id/loginButton"
+        android:layout_below="@+id/loginButton"
+        android:layout_marginTop="26dp"
+        android:background="@drawable/registerbutton_selector" />
+
+    <ImageView
+        android:id="@+id/imageView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="34dp"
+        android:src="@drawable/logo" />
+
+</RelativeLayout>
